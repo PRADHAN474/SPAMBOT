@@ -4,7 +4,7 @@ from telethon import events
 from telethon.tl.types import User
 
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, OWNER_ID, CMD_HNDLR as hl
-from AltBots.data import HRAID, OXYGEN
+from OXYBOT.data import HRAID, OXYGEN
 
 HRAID = []
 
