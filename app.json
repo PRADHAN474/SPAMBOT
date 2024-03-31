@@ -1,0 +1,94 @@
+{
+    "name": "˹𝕆𝕩𝕪𝕘𝕖𝕟 ꭙ 𝕊𝕡𝕒𝕞˼🫧",
+    "logo": "https://telegra.ph/file/6c32d6bff1244f0972640.jpg",
+    "keywords": [
+        "telegram",
+        "telethon",
+        "telegram-bot",
+        "PythonX",
+        "SpamBots"
+    ],
+    "repository": "https://github.com/PRADHAN474/SPAMBOT",
+    "env": {
+      "BOT_TOKEN": {
+        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN2": {
+        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN3": {
+        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN4": {
+        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN5": {
+        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN6": {
+        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN7": {
+        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN8": {
+        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN9": {
+        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN10": {
+        "description": "Telegram Bot Token Get This value from https://t.me/BotFather",
+        "value": "",
+        "required": true
+      },
+      "CMD_HNDLR": {
+        "description": "Custom command handler.",
+        "value": ".",
+        "required": false
+      },
+      "SUDO_USERS": {
+        "description": "Sudo users id space by space",
+        "value": "",
+        "required": false
+      },
+      "OWNER_ID": {
+        "description": "Owner Id",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "Your Heroku api key to update your bot",
+        "value": "",
+        "required": false 
+      },
+      "HEROKU_APP_NAME": {
+        "description": "Your app name to Update your bot",
+        "value": "",
+        "required": false  
+      }
+    },
+  "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
