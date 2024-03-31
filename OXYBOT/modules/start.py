@@ -30,8 +30,8 @@ START_BUTTON = [
 async def start(event):
     if event.is_private:
         AltBot = await event.client.get_me()
-        bot_name = OXYBOT.first_name
-        bot_id = OXYBOT.id
+        bot_name = AltBot.first_name
+        bot_id = AltBot.id
         TEXT = f"**ʜᴇʏ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ [{bot_name}](tg://user?id={bot_id})**\n"
         await event.client.send_file(
             event.chat_id,
