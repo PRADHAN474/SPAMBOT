@@ -23,11 +23,11 @@ async def raid(e):
     if e.sender_id in SUDO_USERS:
         xraid = e.text.split(" ", 2)
 
-        if len(xraid) == 3:
+        if len(xraid) >= 3:  # Changed condition to check if there are at least 3 elements
             entity = await e.client.get_entity(xraid[2])
             uid = entity.id
 
-        elif e.reply_to_msg_id:             
+        elif e.reply_to_msg_id:
             a = await e.get_reply_message()
             entity = await e.client.get_entity(a.sender_id)
             uid = entity.id
@@ -48,8 +48,7 @@ async def raid(e):
                     caption = f"{username} {reply}"
                     await e.client.send_message(e.chat_id, caption)
                     await asyncio.sleep(0.1)
-        except (IndexError, ValueError, NameError):
+        except (IndexError, ValueError, NameError) as exc:  # Catch specific exceptions
             await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐇𝐑𝐚𝐢𝐝\n  » {hl}hraid <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}raid <ᴄᴏᴜɴᴛ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
-        except Exception as e:
-            print(e)
-
+        except Exception as exc:  # Catch all other exceptions
+            print(exc)  # Print the exception for debugging
