@@ -51,4 +51,4 @@ async def raid(e):
         except (IndexError, ValueError, NameError) as exc:  # Catch specific exceptions
             await e.reply(f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐇𝐑𝐚𝐢𝐝\n  » {hl}hraid <ᴄᴏᴜɴᴛ> <ᴜꜱᴇʀɴᴀᴍᴇ ᴏꜰ ᴜꜱᴇʀ>\n  » {hl}raid <ᴄᴏᴜɴᴛ> <ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜꜱᴇʀ>")
         except Exception as exc:  # Catch all other exceptions
-            print(exc)  # Print the exception for debugging
+            print(exc)  # Print the exception for debugging. Fix error in this code this bot not able to work properly fix all errors
